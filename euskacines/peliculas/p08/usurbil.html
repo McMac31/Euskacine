@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USURBIL</title>
+    <link rel="shortcut icon" href="../../src/public/iconos/favicom.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../src/index.css">
+    <link rel="stylesheet" href="../../src/styles/header.css">
+    <link rel="stylesheet" href="../../src/styles/navbar.css">
+    <link rel="stylesheet" href="../../src/styles/slider.css">
+    <link rel="stylesheet" href="../../src/styles/billboard.css">
+    <link rel="stylesheet" href="../../src/styles/info-card.css">
+    <link rel="stylesheet" href="../../src/styles/footer.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="header">
+        <!-- Navbar -->
+         <!-- navbar menu  -->
+         <nav class="navbar" id="activeNav">
+            <div class="navbar__tools">
+                <!-- buscador -->
+                <div class="navbar__search">
+                    <div class="search__icon"><img src="../../src/public/iconos/search-min.svg" alt="icono de buscador" class="search__icon-img"></img></div>
+                    <input class="search__input" type="text" placeholder="Buscar">
+                </div>
+                <!-- menu -->
+                <div class="navbar__menu-icon" id="#disableNav"><a href="#diableNav"><img src="../..//src/public/iconos/Menu-min.svg" alt="icono de menu" class="navbar__menu-icon"></a></div>
+            </div>
+            <!-- Opciones -->
+            <ul class="navbar__menu">
+                <li class="navbar__menu-item"><a href="../../index.html" class="navbar__link">Inicio</a></li>
+                <li class="navbar__menu-item"><a href="../../cines.html" class="navbar__link">Cines</a></li>
+                <li class="navbar__menu-item"><a href="../../contacto.html" class="navbar__link">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Icono Menu -->
+         <div class="header__menu-icon"><a href="#activeNav"><img src="../../src/public/iconos/Menu-min.svg" alt="icono de menu" class="header__img"></a></div>
+        <!-- Logo -->
+        <div class="header__logo"><a href="../../index.html"><img src="../../src/public/iconos/logo.png" alt="logo" class="header__img"></a></div>
+
+        <!-- nav pc -->
+        <ul class="navbar__menuPC">
+            <li class="navbar__item"><a class="navbar__item-link" href="../../index.html">Inicio</a></li>
+            <li class="navbar__item"><a class="navbar__item-link" href="../../cines.html">Cines</a></li>
+            <li class="navbar__item"><a class="navbar__item-link" href="../../contacto.html">Contacto</a></li>
+        </ul>
+
+        <!-- QR -->
+        <div class="header__qr"><a href="../../promos.html"><img src="../../src/public/iconos/QR-min.svg" alt="icono de QR" class="header__img"></a></div>
+    </header>
+    <main class="main">
+        <Section class="main__slider">
+            <!-- Slider -->
+            <div class="slider__image"><img src="../../src/public/cartelera/movil/slider-p08.png"  alt="JOker" class="slider__image-img"></div>
+            <h2 class="slider__title">GRU 4: MI VILLANO FAVORITO</h2>
+        </Section>
+        <!-- caja de texto -->
+        <section class="box">
+            
+            <article class="main__info-card main__info-card--detallesPeli ">
+                <h2 class="info-card__title info-card__title--infoPeli">DURACIÓN</h2>
+                <p class="info-card__description">1h 34m</p>
+                <h2 class="info-card__title info-card__title--infoPeli">ACTORES</h2>
+                <p class="info-card__description">Steve Carell, Joey King, Will Ferrell, Sofia Vergara, Kristen Wiig, Pierre Coffin, Miranda Cosgrove, Stephen Colbert, Chloe Fineman, Madison Polan, Steve Coogan</p>
+                <h2 class="info-card__title info-card__title--infoPeli">GÉNERO</h2>
+                <p class="info-card__description">Comedia</p>
+                <h2 class="info-card__title info-card__title--infoPeli">Directores</h2>
+                <p class="info-card__description">Chris Renaud</p>
+                <h2 class="info-card__title info-card__title--infoPeli">DESCRIPCIÓN</h2>
+                <p class="info-card__description">Después de siete años, nuestro supervillano favorito, ahora convertido en agente de la Liga Anti Villanos, vuelve con una impactante y frenética entrega de caos al más puro estilo Minion en la esperadísima nueva película de Illumination: GRU 4 MI VILLANO FAVORITO.
+
+                    Tras el bombazo en taquilla de Illumination con Minions: El origen de Gru, que recaudó más de mil millones de dólares en todo mundo, la mayor saga de animación de la historia abre un nuevo capítulo en el que Gru (con voz en VO del nominado al Oscar® Steve Carrell y de Florentino Fernández en la versión doblada al español), Lucy (con voz en VO de la nominada al Oscar® Kristen Wiig y de Patricia Conde en la versión doblada al español) y las niñas —Margo (Miranda Cosgrove en VO), Edith (Dana Gaier en VO) y Agnes (Madison Polan en VO)— dan la bienvenida a un nuevo miembro en la familia: Gru Junior, que parece llegar con el propósito de ser un suplicio para su padre.</p>
+                
+            </article>
+            <!-- Horarios de las peliculas -->
+            <article class="main__info-card main__info-card--cine" id="horario">
+                <h2 class="info-card__title">HORARIOS DISPONIBLES</h2>
+                <!-- cuadricula que contiene los horarios-->
+                <div class="billboard__card">
+                    <div class="billboard__card-item"><a href="../datos.html"><div class="tiket">
+                        <span class="tiket__info">SALA A </br> 15:00</span>
+                    </div></a></div>
+                    <div class="billboard__card-item"><a href="../datos.html"><div class="tiket">
+                        <span class="tiket__info">SALA C </br> 16:00</span>
+                    </div></a></div>
+                    <div class="billboard__card-item"><a href="../datos.html"><div class="tiket">
+                        <span class="tiket__info">SALA A </br> 16:30</span>
+                    </div></a></div>
+                    <div class="billboard__card-item"><a href="../datos.html"><div class="tiket">
+                        <span class="tiket__info">SALA B </br> 17:00</span>
+                    </div></a></div>
+                    <div class="billboard__card-item"><a href="../datos.html"><div class="tiket">
+                        <span class="tiket__info">SALA C </br> 19:00</span>
+                    </div></a></div>
+                    <div class="billboard__card-item"><a href="../datos.html"><div class="tiket">
+                        <span class="tiket__info">SALA A </br> 18:00</span>
+                    </div></a></div>
+                    <div class="billboard__card-item"><a href="../datos.html"><div class="tiket">
+                        <span class="tiket__info">SALA A </br> 22:00</span>
+                    </div></a></div>
+                </div>
+            </article>
+            
+            <!-- fecha -->
+            <article class="main__info-card" id="fecha">
+                <h2 class="info-card__title">ELIGE LA FECHA</h2>
+                <!-- cuadricula que contiene los horarios-->
+                <div class="billboard__card">
+                    <a class="billboard__card-item card-item--itemH" href="#horario" >
+                        <div class="tiket tiket--hora">
+                            <span class="tiket__info">29 DE NOVIEMBRE</span>
+                        </div> 
+                    </a>
+                    <a class="billboard__card-item card-item--itemH" href="#horario" >
+                        <div class="tiket tiket--hora">
+                            <span class="tiket__info">30 DE NOVIEMBRE</span>
+                        </div> 
+                    </a>
+                    <a class="billboard__card-item card-item--itemH" href="#horario" >
+                        <div class="tiket tiket--hora">
+                            <span class="tiket__info">1 DE DICIEMBRE</span>
+                        </div> 
+                    </a>
+                    <a class="billboard__card-item card-item--itemH" href="#horario" >
+                        <div class="tiket tiket--hora">
+                            <span class="tiket__info">2 DE DICIEMBRE</span>
+                        </div> 
+                    </a>
+                    <a class="billboard__card-item card-item--itemH" href="#horario" >
+                        <div class="tiket tiket--hora">
+                            <span class="tiket__info">3 DE DICIEMBRE</span>
+                        </div> 
+                    </a>
+                    <a class="billboard__card-item card-item--itemH" href="#horario" >
+                        <div class="tiket tiket--hora">
+                            <span class="tiket__info">4 DE DICIEMBRE</span>
+                        </div> 
+                    </a>
+                    <a class="billboard__card-item card-item--itemH" href="#horario" >
+                        <div class="tiket tiket--hora">
+                            <span class="tiket__info">5 DE DICIEMBRE</span>
+                        </div> 
+                    </a>
+                
+                </div>
+                   
+                </div>
+            </article>
+            
+        </section>
+        <article class="main__info-card">
+            <h2 class="info-card__title">CINE USURBIL</h2>
+            <p class="info-card__description"><i> Vive la magia del cine en su máxima expresión:</i> las mejores películas, tecnología de vanguardia y un ambiente diseñado para tu confort.</p>
+            <p class="info-card__description">Contáctanos al email: USURBIL@GMAIL.COM</p>
+        </article>
+    </main>
+    <footer class="footer">
+        <article class="footer__policies">
+            <div class="footer__policy-links">
+                <p class="policy-links__items"><a href="#" class="policy-links__items-link">Políticas de privacidad</a></p>
+                <p class="policy-links__items"><a href="#" class="policy-links__items-link">Aviso legal</a></p>
+                <p class="policy-links__items"><a href="#" class="policy-links__items-link">Politicas de cookies</a></p>
+            </div>
+            <div class="footer__social-media">
+                <div class="social-media__icon"><a href="#" class="social-media__icon-link"><img src="../../src/public/iconos/instagram-min.svg" alt="icono de instagram" class="social-media__icon-img"></a></div>
+                <div class="social-media__icon"><a href="#" class="social-media__icon-link"><img src="../../src/public/iconos/facebook-min.svg" alt="icono de facebook" class="social-media__icon-img"></a></div>
+                <div class="social-media__icon"><a href="#" class="social-media__icon-link"><img src="../../src/public/iconos/youtube-min.svg" alt="icono de youtube" class="social-media__icon-img"></a></div>
+            </div>
+        </article>
+        <section class="footer__common">
+            <div class="common__image"><a href="https://creativecommons.org/licenses/by/4.0/legalcode.en"><img src="../../src/public/footer/com.png" alt="common icon" class="common__image-img"></a></div>   
+            <!-- Decorativo -->
+            <div class="common__rectangle common__rectangle--one"></div>
+            <div class="common__rectangle common__rectangle--two"></div>
+        </section>
+    </footer>
+
+</body>
+</html>
