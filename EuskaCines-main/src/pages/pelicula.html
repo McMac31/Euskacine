@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andoain</title>
+       <!-- Estilos generales -->
+       <link rel="stylesheet"  href="../css/index.css">
+       <!-- Header-Componen CSS -->
+      <link rel="stylesheet" href="./../components/header/header-component.css"/>
+      <link rel="stylesheet" href="./../components/header/_nav.css"/>
+      <link rel="stylesheet" href="./../components/header/_navbar.css"/>
+      <!-- Footer-Component CSS-->
+      <link rel="stylesheet" href="../components/footer/footer-component.css">
+
+    <link rel="stylesheet" href="../../src/components/slider/slider-component.css">
+    
+    <link rel="stylesheet" href="../components/movie/movie-component.css">
+    
+
+    <link rel="stylesheet" href="../../src/css/info-card.css">
+
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    
+    
+  
+
+    <!-- <link rel="stylesheet" href="../style.css"> -->
+</head>
+<body>
+    <header class="header">
+        <header-component></header-component>
+    </header>
+    <main class="main">
+        <Section class="main__slider">
+            <!-- Slider -->
+            <div class="slider__image"><img src=""  alt="" id="slider2-image" class="slider__image-img"></div>
+            <h2 class="slider__title" id="slider2-title"></h2>
+        </Section>
+        <!-- caja de texto -->
+        <section class="box">
+            
+            <article class="main__info-card main__info-card--detallesPeli ">
+                <h2 id="duracionTitulo" class="info-card__title info-card__title--infoPeli">DURACIÓN</h2>
+                <p id="duracionParrafo" class="info-card__description"><!--Generado de forma dinamica--></p>
+                <h2 id="actoresTitulo" class="info-card__title info-card__title--infoPeli">ACTORES</h2>
+                <p id="actoresParrafo" class="info-card__description"><!--Generado de forma dinamica--></p>
+                <h2 id="generoTitulo" class="info-card__title info-card__title--infoPeli">GÉNERO</h2>
+                <p id="generoParrafo" class="info-card__description"><!--Generado de forma dinamica--></p>
+                <h2 id="directoresTitulo" class="info-card__title info-card__title--infoPeli">Directores</h2>
+                <p id="directoresParrafo" class="info-card__description"><!--Generado de forma dinamica--></p>
+                <h2 id="descripcionTitulo" class="info-card__title info-card__title--infoPeli">DESCRIPCIÓN</h2>
+                <p id="descripcionParrafo" class="info-card__description"><!--Generado de forma dinamica--></p>
+            </article>
+            <!-- Horarios de las peliculas -->
+            <article class="main__info-card main__info-card--cine" id="horario">
+                <h2 class="info-card__title">HORARIOS DISPONIBLES</h2>
+                <!-- cuadricula que contiene los horarios-->
+                <div id="horariosGrid" class="billboard__card">
+                    <!-- Generado de forma dinamica -->
+                </div>
+            </article>
+            
+            <!-- fecha -->
+            <article  class="main__info-card" id="fecha">
+                <h2 class="info-card__title">ELIGE LA FECHA</h2>
+                <!-- cuadricula que contiene los horarios-->
+                <div class="billboard__card">
+                    <a class="billboard__card-item card-item--itemH" href="#horario" >
+                        <div class="tiket tiket--hora">
+                            <span class="tiket__info">17 DE OCTUBRE</span>
+                        </div> 
+                    </a>
+                    <a class="billboard__card-item card-item--itemH" href="#horario" >
+                        <div class="tiket tiket--hora">
+                            <span class="tiket__info">18 DE OCTUBRE</span>
+                        </div> 
+                    </a>
+                    <a class="billboard__card-item card-item--itemH" href="#horario" >
+                        <div class="tiket tiket--hora">
+                            <span class="tiket__info">19 DE OCTUBRE</span>
+                        </div> 
+                    </a>
+                    <a class="billboard__card-item card-item--itemH" href="#horario" >
+                        <div class="tiket tiket--hora">
+                            <span class="tiket__info">20 DE OCTUBRE</span>
+                        </div> 
+                    </a>
+                    <a class="billboard__card-item card-item--itemH" href="#horario" >
+                        <div class="tiket tiket--hora">
+                            <span class="tiket__info">21 DE OCTUBRE</span>
+                        </div> 
+                    </a>
+                    <a class="billboard__card-item card-item--itemH" href="#horario" >
+                        <div class="tiket tiket--hora">
+                            <span class="tiket__info">22 DE OCTUBRE</span>
+                        </div> 
+                    </a>
+                    <a class="billboard__card-item card-item--itemH" href="#horario" >
+                        <div class="tiket tiket--hora">
+                            <span class="tiket__info">23 DE OCTUBRE</span>
+                        </div> 
+                    </a>
+                
+                </div>
+                   
+                </div>
+            </article>
+            
+        </section>
+        <article class="main__info-card">
+            <h2 id="cineTitle" class="info-card__title"></h2>
+            <p id="cineParrafo" class="info-card__description"></p>
+            <p  class="info-card__description">Contáctanos al email: <span id="cineContact"></span></p>
+        </article>
+    </main>
+    <footer class="footer">
+        <footer-component></footer-component>
+    </footer>
+
+
+
+
+      <!-- scripts -->
+       <!-- index -->
+        <script defer type="module" src="../js/index.js"></script>
+     <!-- Componente Header -->
+     <script defer type="module" src="../components/header/header-component.js"></script>
+     
+     <!-- Componente Footer -->
+     <script defer type="module" src="../components/footer/footer-component.js"></script>
+     <!-- Obtener datos de la pelicula seleccionada -->
+     <script defer type="module" src="../js/InfoPelicula.js"></script>
+     <script type="module" src="../js/InfoCine.js"></script>
+
+</body>
+</html>

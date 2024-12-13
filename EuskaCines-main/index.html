@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- meta etiquetas -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EuskaCines</title>
+
+        <!-- Archivos CSS -->
+            
+        <link rel="stylesheet" href="./src/css/index.css"> <!--Estilos generales-->
+        <!--Estilos del componente header-->
+        <link rel="stylesheet" href="./src/components/header/header-component.css">
+        <link rel="stylesheet" href="./src/components/header/_nav.css">
+        <link rel="stylesheet" href="./src/components/header/_navbar.css">
+        <!--Estilos del componente slider-->
+        <link rel="stylesheet" href="./src/components/slider/slider-component.css">
+        <!--Estilos del componente carousel-->
+        <link rel="stylesheet" href="./src/components/carousel/carousel-component.css">
+        <!--Estilos del componente movie(cartelera)-->
+        <link rel="stylesheet" href="./src/components/movie/movie-component.css">
+        <!--Estilos de paginacion-->
+        <link rel="stylesheet" href="./src/css/pagination.css">
+        <!--Estilos estilos del componente footer-->
+        <link rel="stylesheet" href="./src/components/footer/footer-component.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <!-- componente header -->
+            <header-component></header-component>
+        </header>
+        <!-- Main Content -->
+        <main class="main">
+            <!-- padre del componente slider -->
+            <section id="slider" class="main__slider main__slider--animation">
+                <!-- Generado dinámicamente -->
+            </section>
+            <!-- Carrusel -->
+            <section class="main__carousel">
+                <h2 class="carousel__title">TOP TAQUILLA</h2>
+                <!-- padre del componente carousel -->
+                <div id="carousel-container" class="carousel__content carousel__content--slides">
+                    <!-- Generado dinámicamente -->
+                </div>
+            </section>
+            <!-- Cartelera -->
+            <section class="main__billboard">
+                <h1 class="billboard__title">CARTELERA</h1>
+                <div class="billboard__filter">
+                    <p class="billboard__filter-title">Filtrar</p>
+                    <div class="billboard__filter-icon">
+                        <img src="./src/public/iconos/filtro-min.svg" alt="icono de filtro" class="billboard__filter-icon-img">
+                    </div>
+                </div>
+                <!-- padre del componente movie -->
+                <div id="container-billboard" class="billboard__card">
+                    <!-- Generado dinámicamente -->
+                </div>
+
+                <!-- Paginación -->
+                <div class="pagination">
+                    <div class="pagination__icon"><span class="pagination__icon-num">1</span></div>
+                </div>
+            </section>
+        </main>
+
+        <!-- padre del compnente Footer -->
+        <footer class="footer">
+            <footer-component></footer-component>
+        </footer>
+
+        <!-- Scripts -->
+        
+        <!-- script de conecion con el fichero -->
+        <script defer type="module" src="./src/js/connected.js"></script>
+        <!-- script del componente header -->
+        <script defer type="module" src="./src/components/header/header-component.js"></script>
+        <!-- script del componente slider -->
+        <script defer type="module" src="./src/components/slider/slider-component.js"></script>
+        <!-- script del componente carousel -->
+        <script defer type="module" src="./src/components/carousel/carousel-component.js"></script>
+        <!-- script del componente movie -->
+        <script defer type="module" src="./src/components/movie/movie-component.js"></script>
+        <!-- script del componente footer -->
+        <script defer type="module" src="./src/components/footer/footer-component.js"></script>
+        <!-- script global -->
+        <script defer type="module" src="./src/js/index.js"></script>
+    </body>
+</html>
